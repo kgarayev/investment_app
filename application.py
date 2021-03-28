@@ -1,4 +1,5 @@
 import os
+import sqlite3
 from datetime import datetime
 
 from cs50 import SQL
@@ -36,8 +37,8 @@ app.config["SESSION_TYPE"] = "filesystem"
 Session(app)
 
 # Configure CS50 Library to use SQLite database
-# db = SQL("sqlite:///finance.db")
-db = SQL(os.getenv("DATABASE_URL"))
+db = SQL("sqlite:///finance.db")
+#db = SQL(os.getenv("DATABASE_URL"))
 
 # Make sure API key is set
 if not os.environ.get("API_KEY"):
@@ -388,3 +389,8 @@ def errorhandler(e):
 # Listen for errors
 for code in default_exceptions:
     app.errorhandler(code)(errorhandler)
+
+
+if __name__ == "__main__":
+ port = int(os.environ.get("PORT", 8080))
+ app.run(host="0.0.0.0", port=port)
