@@ -1,0 +1,9 @@
+cs50
+Flask
+Flask-Session
+requests
+gunicorn
+psycopg2
+passlib
+SQLAlchemy
+sqlite3
