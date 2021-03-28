@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+A share of {{ stock_name }} ({{ stock_symbol }}) costs {{ stock_price | usd }}
+{% endblock %}

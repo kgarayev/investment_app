@@ -1,0 +1,70 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+
+    <h4>Portfolio</h4>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Symbol</th>
+                    <th>Name</th>
+                    <th>Shares</th>
+                    <th>Price</th>
+                    <th>TOTAL</th>
+                    <!--
+                    <th>Buy</th>
+                    <th>Sell</th>
+                    -->
+                </tr>
+            </thead>
+
+            <tfoot>
+                <tr>
+                    <td colspan = "4"></td>
+                    <td>{{ all_money | usd }}</td>
+                </tr>
+            </tfoot>
+
+            <tbody>
+                {% for item in portfolio %}
+                <tr>
+                    <td>{{ item.symbol }}</td>
+                    <td>{{ item.name }}</td>
+                    <td>{{ item.shares }}</td>
+                    <td>{{ item.price | usd }}</td>
+                    <td>{{ item.TOTAL | usd }}</td>
+
+                    <!--
+                    <td colspan = "2">
+                        <form action="/" method="post">
+                            <input autocomplete="off" autofocus class="form-control" name="buy" type="number" min="1">
+                            <button class="btn btn-primary" type="submit">Buy</button>
+                        </form>
+                    </td>
+                    <td colspan = "2">
+                        <form action="/" method="post">
+                            <input autocomplete="off" autofocus class="form-control" name="sell" type="number" min="1">
+                            <button class="btn btn-primary" type="submit">Sell</button>
+                        </form>
+                    </td>
+                    -->
+
+                </tr>
+
+                {% endfor %}
+
+                <tr>
+                    <td colspan = "4">CASH</td>
+                    <td>{{ cash | usd }}</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+
+{% endblock %}
