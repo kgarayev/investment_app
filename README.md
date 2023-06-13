@@ -18,7 +18,7 @@ On the backend, the app utilises databases and hashing techniques for secure use
 
 ## :art: Styling
 
-The Investment App features a clean and user-friendly interface. The CSS was developed from scratch, without relying on external libraries or frameworks, to ensure a unique and cohesive design. The app is also designed to be responsive and accessible, providing a seamless experience across devices.
+The Investment App features a clean and user-friendly interface. The CSS was developed using Bootstrap. 
 
 ## :rocket: Opportunities for Improvement
 
@@ -28,9 +28,6 @@ While the Investment App is functional and user-friendly, there are several area
 - Payment Integration: Integrating a secure payment system to facilitate seamless share trading transactions.
 - Mobile Responsiveness: Optimising the app's design and layout for a better user experience on mobile devices.
 - Error Handling: Implementing improved error handling mechanisms to provide users with clear and informative error messages.
-
-The Investment App offers immense potential for growth and improvement. The possibilities are limitless, and there are numerous avenues to explore in order to enhance the app's functionality and user experience.
-
 
 ## :page_with_curl: License
 
