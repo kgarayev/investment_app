@@ -1,5 +1,14 @@
 # :moneybag: Investment App
 
+## :computer: Tech Used
+
+- Programming Languages: Python, JavaScript
+- Frameworks: Flask, jQuery
+- Database: SQLite
+- Web Development: HTML, CSS, Bootstrap
+- Version Control: Git
+- API: Finance API
+
 ## :page_facing_up: Overview
 
 The Investment App is a web application that allows users to manage their investments and trade shares. It was created back in 2020 as my first foray into web development. The app was built using HTML, CSS (Bootstrap), and JavaScript (jQuery) for the front end, while Python Flask and SQLite were used for the back end. This project provided me with a solid foundation in web development and an understanding of web protocols.
